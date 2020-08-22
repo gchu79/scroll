@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scrollable</title>
+    <link href="styles.css" rel="stylesheet">
+<!-- Always on top: Position Fixed-->
+<header>
+    <h1>Bible Study Resources</h1>
+    <h2>A webpage where you can quickly access online resources to help with your bible study. <br />
+Click to select a Book, a Translation and a Chapter, then click to select a Resource. <br />
+A new tab will be opened to display the selected resource. Return to this page for another selection</h2>
+</header>
+<!-- Fixed size after header-->
+<div class="content">
+    <div class="sidebar1">
+    </div>
+    <!-- Scrollable div with main content -->
+    <div id="scrollable2">
+        <div class="grid-container">
+            <div class="bible-grid">
+                <blank data-book1>select one</blank>
+                <blank data-book1></blank>
+                <blank data-book1></blank>        
+                <section data-heading>Pentateuch (Law)</section>
+                <section data-heading>Wisdom Books</section>
+                <section data-heading>Major Prophets</section>
+                <button data-book>Genesis</button>
+                <button data-book>Job</button>
+                <button data-book>Isaiah</button>
+                <button data-book>Exodus</button>
+                <button data-book>Psalms</button>
+                <button data-book>Jeremiah</button>
+                <button data-book>Leviticus</button>
+                <button data-book>Proverbs</button>
+                <button data-book>Lamentations</button>
+                <button data-book>Numbers</button>
+                <button data-book>Ecclesiastes</button>
+                <button data-book>Ezekiel</button>
+                <button data-book>Deuteronomy</button>
+                <button data-book>Song of Solomon</button>
+                <button data-book>Daniel</button>
+                <blank data-book1></blank>
+                <blank data-book1></blank>
+                <blank data-book1></blank>
+                <section data-heading>Historical Books</section>
+                <blank data-book1></blank>
+                <section data-heading>Minor Prophets</section>                        
+                <button data-book>Joshua</button>
+                <blank data-book1></blank>
+                <button data-book>Hosea</button>
+                <button data-book>Judges</button>
+                <blank data-book1></blank>
+                <button data-book>Joel</button>
+                <button data-book>Ruth</button>
+                <blank data-book1></blank>
+                <button data-book>Amos</button>
+                <button data-book>1 Samuel</button>
+                <blank data-book1></blank>
+                <button data-book>Obadiah</button>
+                <button data-book>2 Samuel</button>
+                <blank data-book1></blank>
+                <button data-book>Jonah</button>
+                <button data-book>1 Kings</button>
+                <blank data-book1></blank>
+                <button data-book>Micah</button>
+                <button data-book>2 Kings</button>
+                <blank data-book1></blank>
+                <button data-book>Nahum</button>
+                <button data-book>1 Chronicles</button>
+                <blank data-book1></blank>
+                <button data-book>Habakkuk</button>
+                <button data-book>2 Chronicles</button>
+                <blank data-book1></blank>
+                <button data-book>Zephaniah</button>
+                <button data-book>Ezra</button>
+                <blank data-book1></blank>
+                <button data-book>Haggai</button>
+                <button data-book>Nehemiah</button>
+                <blank data-book1></blank>
+                <button data-book>Zechariah</button>
+                <button data-book>Esther</button>
+                <blank data-book1></blank>
+                <button data-book>Malachi</button>
+                <blank data-book1></blank>
+                <blank data-book1></blank>
+                <blank data-book1></blank>                        
+                <section data-heading>Gospels</section>
+                <section data-heading>Pauline Epistles</section>
+                <section data-heading>General Epistles</section>
+                <button data-book>Matthew</button>
+                <button data-book>Romans</button>
+                <button data-book>Hebrews</button>
+                <button data-book>Mark</button>
+                <button data-book>1 Corinthians</button>
+                <button data-book>James</button>
+                <button data-book>Luke</button>
+                <button data-book>2 Corinthians</button>
+                <button data-book>1 Peter</button>
+                <button data-book>John</button>
+                <button data-book>Galatians</button>
+                <button data-book>2 Peter</button>
+                <blank data-book1></blank>            
+                <button data-book>Ephesians</button>
+                <button data-book>1 John</button>
+                <section data-heading>Early Churches</section>
+                <button data-book>Philippians</button>
+                <button data-book>2 John</button>
+                <button data-book>Acts</button>            
+                <button data-book>Colossians</button>
+                <button data-book>3 John</button>
+                <blank data-book1></blank>
+                <button data-book>1 Thessalonians</button>
+                <button data-book>Jude</button>
+                <blank data-book1></blank>
+                <button data-book>2 Thessalonians</button>
+                <blank data-book1></blank>
+                <blank data-book1></blank>
+                <button data-book>1 Timothy</button>
+                <section data-heading>Apocalypse</section>
+                <blank data-book1></blank>
+                <button data-book>2 Timothy</button>
+                <button data-book>Revelation</button>
+                <blank data-book1></blank>
+                <button data-book>Titus</button>
+                <blank data-book1></blank>
+                <blank data-book1></blank>
+                <button data-book>Philemon</button>
+                <blank data-book1></blank>
+            </div>
+            <div class="version-grid">       
+                <blank data-version1>select up to 3</blank>             
+                <section data-heading>Translation</section>
+                <button data-version>ESV</button>
+                <button data-version>NIV</button>
+                <button data-version>NLT</button>
+                <button data-version>MSG</button>
+                <button data-version>AMP</button>
+                <button data-version>CJB</button>
+                <button data-version>NASB</button>
+                <button data-version>NET</button>            
+                <button data-version>NRSV</button>
+                <button data-version>KJV</button>            
+                <button data-version>NKJV</button>                                 
+                <button data-version>MOUNCE</button>
+                <button data-version>NVI</button>
+                <button data-version>CUV</button>
+                <blank data-version1></blank>
+                <button clear-version>CLEAR</button>
+                <blank data-version1></blank>
+                <blank data-version1></blank>
+                <blank data-version1></blank>
+                <blank data-version1>select resource</blank>
+                <section1 data-heading>Resources</section1>
+                <button select-option>BibleHub Parallel</button>
+                <button select-option>BibleHub Interlinear</button>
+                <button select-option>BibleGateway</button>
+                <blank data-version1></blank>  
+                <button select-option>Swindoll</button>   
+                <button select-option>Stedman</button>   
+                <button select-option>Constable</button>
+                <button select-option>Bible Project</button>            
+                <blank data-version1></blank>
+                <button select-option>BlueLetterBible.Org</button>
+                <button select-option>Bible.Org</button>
+            </div>
+            <div class="number-grid">          
+                <blank data-number>enter chapter</blank>                  
+                <section data-heading>Chapter</section>
+                <button data-number>1</button>
+                <button data-number>2</button>
+                <button data-number>3</button>
+                <button data-number>4</button>
+                <button data-number>5</button>
+                <button data-number>6</button>
+                <button data-number>7</button>
+                <button data-number>8</button>
+                <button data-number>9</button>
+                <button data-number>0</button>            
+                <blank data-number1></blank>
+                <button clear-number>CLEAR</button>
+                <blank data-number1></blank>
+                <blank data-number1>Chapter Max</blank>
+                <section data-max></section>
+                <blank data-number1></blank>
+                <blank data-number1></blank>
+                <blank data-number1></blank>
+                <blank data-number1></blank>
+                <blank data-number1></blank>
+                <blank data-number1></blank>            
+                <blank data-number1></blank>
+            </div>  
+        </div>
+    </div>
+    <!-- Always on top. Fixed position, fixed width, relative to content width -->
+    <div class="sidebar2">
+        sidebar-left<br />
+        sidebar-left<br />
+        <br />
+        sidebar-left<br />
+        sidebar-left<br />
+        sidebar-left<br />
+        sidebar-left<br />
+        sidebar-left<br />
+        sidebar-left<br />
+    </div>
+</div>
+<!-- Always at the end of the page -->
+<footer>
+<br />08/13/2020. Webpage developed by George Chu. Please send any comment and suggestion to Ampelos79@gmail.com
+</footer>

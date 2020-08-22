@@ -1,0 +1,205 @@
+html, body {
+    height:100%;
+    margin:0;
+    padding:0;
+    background: linear-gradient(to right, #00AAFF, #00AAFF);
+}
+
+header{
+    width: 100%;
+    background: #00AAFF;
+    position: fixed; 
+    top: 0;
+    text-align: center;
+    height: 110px !important;
+    z-index:110;
+}
+h1 {
+    font-size: 1.5rem;  
+    font-weight: bold;
+    border: 2px solid black;
+    text-align: center
+}
+
+h2 {
+    font-size: 0.75rem;  
+    text-align: center  
+}
+
+.content {
+    position:relative;
+    height: 100%;
+    width:90%; /* Sizing - any length */
+    padding:60px 0 30px 0; /* Header height and footer height */
+    margin:0 auto 0 auto; /* Center content */
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;    
+}
+
+.sidebar2 {
+    background:#2700ff;
+    height:100%;
+    width: 15%;
+    top:0;
+    padding-top:60px;
+    position:absolute;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.sidebar1 {
+    background:#2700ff;
+    height:100%;
+    width: 5%;
+    top:0;
+    padding-top:60px;
+    position:absolute;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.sidebar1 {
+    left: 0;
+}
+.sidebar2 {
+    right: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 3fr auto 1fr auto 1fr;
+}    
+
+.bible-grid {
+    display: grid;
+    justify-content:center;
+    align-content:center;
+    min-height: 25vh;
+    grid-template-columns: repeat(3,125px);
+    grid-template-rows: minmax(60px,auto) repeat(38,20px);
+}
+
+.bible-grid > button {
+    cursor: pointer;
+    font-size: 0.75rem;
+    border: 1px solid black;
+    outline: none;
+    background-color: rgba(255,255,255,.75);
+}
+    
+.bible-grid > button:hover {
+    background-color: rgba(255,255,255,.9);   
+}
+.bible-grid > section {
+    font-size: 0.75rem;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+    outline: none;
+    background-color: rgba(136, 124, 124, 0.75);
+}
+
+.number-grid {
+    display: grid;
+    justify-content:flex-start;
+    align-content:center;
+    min-height: 25vh;
+    grid-template-columns: repeat(1,100px);
+    grid-template-rows: minmax(60px,auto) repeat(38,20px);
+}
+.number-grid > blank {
+    font-size: 0.75rem;
+}
+.number-grid > button {
+    cursor: pointer;
+    font-size: 0.75rem;
+    border: 1px solid black;
+    outline: none;
+    background-color: rgba(255,255,255,.75);
+}
+.number-grid > section {
+    font-size: 0.75rem;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+    outline: none;
+    background-color: rgba(136, 124, 124, 0.75);
+}
+.number-grid > button:hover {
+    background-color: rgba(255,255,255,.9);   
+}
+
+.version-grid {
+    display: grid;
+    justify-content:flex-end;
+    align-content:center;
+    min-height: 25vh;
+    grid-template-columns: repeat(1,150px);
+    grid-template-rows: minmax(60px,auto) repeat(38,20px);
+}
+.version-grid > blank {
+    font-size: 0.75rem;
+}
+.version-grid > button {
+    cursor: pointer;
+    font-size: 0.75rem;
+    border: 1px solid black;
+    outline: none;
+    background-color: rgba(255,255,255,.75);
+}
+
+.version-grid > section {
+    font-size: 0.75rem;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+    outline: none;
+    background-color: rgba(136, 124, 124, 0.75);
+}
+
+.version-grid > section1 {
+    font-size: 0.75rem;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+    outline: none;
+    background-color: rgba( 191, 176, 176, 0.75 );
+}
+
+.version-grid > button:hover {
+    background-color: rgba(255,255,255,.9);   
+}
+
+#scrollable2 {
+    height:100%;
+    background:#00AAFF;
+    width: 80%
+    margin-left: 00px;
+    margin-right: 0px;
+    overflow:auto;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+footer {
+    width: 100%;
+    background: #00AAFF;
+    font-size: 0.75rem; 
+    text-align: center;    
+    position: fixed; 
+    bottom: 0;
+    height: 40px;
+}
