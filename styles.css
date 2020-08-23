@@ -11,7 +11,7 @@ header{
     position: fixed; 
     top: 0;
     text-align: center;
-    height: 110px !important;
+    height: 16% !important;
     z-index:110;
 }
 h1 {
@@ -22,15 +22,15 @@ h1 {
 }
 
 h2 {
-    font-size: 0.75rem;  
+    font-size: 1rem;  
     text-align: center  
 }
 
 .content {
     position:relative;
-    height: 95%;
+    height: 94%;
     width:90%; /* Sizing - any length */
-    padding:60px 0 20px 0; /* Header height and footer height */
+    padding:80px 0 20px 0; /* Header height and footer height */
     margin:0 auto 0 auto; /* Center content */
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
@@ -40,11 +40,11 @@ h2 {
 }
 
 .sidebar2 {
-    background:#2700ff;
+    background:#00AAFF;
     height:95%;
     width: 15%;
     top:0;
-    padding-top:60px;
+    padding-top:50px;
     position:absolute;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
@@ -53,8 +53,57 @@ h2 {
     box-sizing:border-box;
 }
 
+.output-grid {
+    display: grid;
+    justify-content:flex-start;
+    align-content:center;
+    min-height: 25vh;
+    grid-template-columns: repeat(1,200px);
+    grid-template-rows: minmax(60px,auto) repeat(40,25px);
+}
+
+.output-grid > output {
+    cursor: pointer;
+    font-size: 1rem;
+    font: 1.25rem Arial, san-serif;
+    border: 1px solid black;
+    align-content:center;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    outline: none;
+    background-color: rgba(255,255,255,.5);
+}
+
+.output-grid > section {
+    font-size: 1rem;
+    text-align: center;
+    font: 1rem Arial, san-serif;    
+    font-weight: bold;
+    border: 1px solid black;
+    outline: none;
+    background-color: rgba(136, 124, 124, 0.75);
+}
+
+
+.output-grid > button {
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px solid black;
+    outline: none;
+    background-color: rgba(255,255,255,.75);
+}
+.output-grid > blank {
+    font-size: 1rem;
+    text-align:center;     
+}    
+.output-grid > button:hover {
+    background-color: rgba(255,255,255,.9);   
+}
+
+
 .sidebar1 {
-    background:#2700ff;
+    background:#00AAFF;
     height:95%;
     width: 5%;
     top:0;
@@ -85,23 +134,27 @@ h2 {
     justify-content:center;
     align-content:center;
     min-height: 25vh;
-    grid-template-columns: repeat(3,125px);
-    grid-template-rows: minmax(60px,auto) repeat(40,20px);
+    grid-template-columns: repeat(3,150px);
+    grid-template-rows: minmax(60px,auto) repeat(40,25px);
 }
 
 .bible-grid > button {
     cursor: pointer;
-    font-size: 0.75rem;
+    font-size: 1rem;
     border: 1px solid black;
     outline: none;
     background-color: rgba(255,255,255,.75);
 }
-    
+.bible-grid > blank {
+    font-size: 1rem;
+    text-align:center;     
+}    
 .bible-grid > button:hover {
     background-color: rgba(255,255,255,.9);   
 }
 .bible-grid > section {
-    font-size: 0.75rem;
+    font-size: 1rem;
+    font: 1rem Arial, san-serif;    
     text-align: center;
     font-weight: bold;
     border: 1px solid black;
@@ -114,21 +167,23 @@ h2 {
     justify-content:flex-start;
     align-content:center;
     min-height: 25vh;
-    grid-template-columns: repeat(1,100px);
-    grid-template-rows: minmax(60px,auto) repeat(40,20px);
+    grid-template-columns: repeat(1,150px);
+    grid-template-rows: minmax(60px,auto) repeat(40,25px);
 }
 .number-grid > blank {
-    font-size: 0.75rem;
+    font-size: 1rem;
+    text-align:center;    
 }
 .number-grid > button {
     cursor: pointer;
-    font-size: 0.75rem;
+    font-size: 1rem;
     border: 1px solid black;
     outline: none;
     background-color: rgba(255,255,255,.75);
 }
 .number-grid > section {
-    font-size: 0.75rem;
+    font-size: 1rem;
+    font: 1rem Arial, san-serif;    
     text-align: center;
     font-weight: bold;
     border: 1px solid black;
@@ -145,21 +200,23 @@ h2 {
     align-content:center;
     min-height: 25vh;
     grid-template-columns: repeat(1,150px);
-    grid-template-rows: minmax(60px,auto) repeat(40,20px);
+    grid-template-rows: minmax(60px,auto) repeat(40,25px);
 }
 .version-grid > blank {
-    font-size: 0.75rem;
+    font-size: 1rem;
+    text-align:center;     
 }
 .version-grid > button {
     cursor: pointer;
-    font-size: 0.75rem;
+    font-size: 1rem;
     border: 1px solid black;
     outline: none;
     background-color: rgba(255,255,255,.75);
 }
 
 .version-grid > section {
-    font-size: 0.75rem;
+    font-size: 1rem;
+    font: 1rem Arial, san-serif;    
     text-align: center;
     font-weight: bold;
     border: 1px solid black;
@@ -197,7 +254,7 @@ h2 {
 footer {
     width: 100%;
     background: #00AAFF;
-    font-size: 0.75rem; 
+    font-size: 1rem; 
     text-align: center;    
     position: fixed; 
     bottom: 0;
