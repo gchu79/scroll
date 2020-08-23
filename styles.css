@@ -23,7 +23,8 @@ h1 {
 
 h2 {
     font-size: 2vh;  
-    text-align: center  
+    text-align: center;
+    font-weight: normal
 }
 
 .content {
