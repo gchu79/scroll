@@ -60,7 +60,7 @@ h2 {
     align-content:center;
     min-height: 25vh;
     grid-template-columns: repeat(1,200px);
-    grid-template-rows: minmax(60px,auto) repeat(40,25px);
+    grid-template-rows: minmax(60px,auto) repeat(40,35px);
 }
 
 .output-grid > output {
@@ -136,7 +136,7 @@ h2 {
     align-content:center;
     min-height: 25vh;
     grid-template-columns: repeat(3,150px);
-    grid-template-rows: minmax(60px,auto) repeat(40,25px);
+    grid-template-rows: minmax(60px,auto) repeat(40,35px);
 }
 
 .bible-grid > button {
@@ -169,7 +169,7 @@ h2 {
     align-content:center;
     min-height: 25vh;
     grid-template-columns: repeat(1,150px);
-    grid-template-rows: minmax(60px,auto) repeat(40,25px);
+    grid-template-rows: minmax(60px,auto) repeat(40,35px);
 }
 .number-grid > blank {
     font-size: 1rem;
@@ -201,7 +201,7 @@ h2 {
     align-content:center;
     min-height: 25vh;
     grid-template-columns: repeat(1,150px);
-    grid-template-rows: minmax(60px,auto) repeat(40,25px);
+    grid-template-rows: minmax(60px,auto) repeat(40,35px);
 }
 .version-grid > blank {
     font-size: 1rem;
