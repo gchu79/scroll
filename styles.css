@@ -135,7 +135,7 @@ h2 {
     justify-content:center;
     align-content:center;
     min-height: 25vh;
-    grid-template-columns: repeat(3,225px);
+    grid-template-columns: repeat(3,220px);
     grid-template-rows: minmax(60px,auto) repeat(40,32px);
 }
 
