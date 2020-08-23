@@ -15,14 +15,14 @@ header{
     z-index:110;
 }
 h1 {
-    font-size: 1.5rem;  
+    font-size: 3vh;  
     font-weight: bold;
     border: 2px solid black;
     text-align: center
 }
 
 h2 {
-    font-size: 1rem;  
+    font-size: 2vh;  
     text-align: center  
 }
 
@@ -254,7 +254,7 @@ h2 {
 footer {
     width: 100%;
     background: #00AAFF;
-    font-size: 1rem; 
+    font-size: 2vh; 
     text-align: center;    
     position: fixed; 
     bottom: 0;
