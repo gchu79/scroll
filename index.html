@@ -83,16 +83,17 @@ Click to select a Book, a Translation and a Chapter, then click to select a Reso
 A new tab will be opened to display the selected resource. Return to this page for another selection</h2>
 </header>
 <!-- Fixed size after header-->
+<body style="margin:-; padding:0; height:100%;">
 <div class="content">
     <div class="sidebar1">
     </div>
     <!-- Scrollable div with main content -->
     <div id="scrollable2">
         <div class="grid-container">
-            <div class="bible-grid">
+            <div class="bible-grid"> 
                 <blank data-book1></blank>
                 <blank data-book1></blank>
-                <blank data-book1></blank>
+                <blank data-book1></blank>                                
                 <blank data-book1>select one</blank>
                 <blank data-book1></blank>
                 <blank data-book1></blank>        
@@ -201,9 +202,17 @@ A new tab will be opened to display the selected resource. Return to this page f
                 <blank data-book1></blank>
                 <button data-book>Philemon</button>
                 <blank data-book1></blank>
+                <blank data-book1></blank>
+                <blank data-book1></blank>
+                <blank data-book1></blank>                
             </div>
-            <div class="version-grid">       
-                <blank data-version1></blank>              
+        </div>
+    </div>
+</div>    
+    <!-- Always on top. Fixed position, fixed width, relative to content width -->
+    <div class="sidebar2">
+            <div class="version-grid">  
+                <blank data-version1></blank>                     
                 <blank data-version1>select up to 4</blank>             
                 <section data-heading>Translation</section>
                 <button data-version>ESV</button>
@@ -224,10 +233,10 @@ A new tab will be opened to display the selected resource. Return to this page f
                 <button clear-version>CLEAR</button>
                 <blank data-version1></blank>
                 <blank data-version1></blank>
-                <blank data-version1></blank>
+                <blank data-version1></blank>                                                 
             </div>
-            <div class="number-grid">    
-                <blank data-number1></blank>                     
+            <div class="number-grid"> 
+                <blank data-number1></blank>                                 
                 <blank data-number>enter chapter</blank>                  
                 <section data-heading>Chapter</section>
                 <button data-number>1</button>
@@ -248,28 +257,15 @@ A new tab will be opened to display the selected resource. Return to this page f
                 <button clear-number>CLEAR</button>
                 <blank data-number1></blank>
                 <blank data-number1></blank>
-                <blank data-number1></blank>
-                <blank data-number1></blank>
-                <blank data-number1></blank>            
-                <blank data-number1></blank>
-            </div>  
-        </div>
-    </div>
-    <!-- Always on top. Fixed position, fixed width, relative to content width -->
-    <div class="sidebar2">
-        <div class="output-grid">
-            <br />
-            <br />
-            <br />
-            <br />    
-            <br /> 
-            <br /> 
+                <blank data-number1></blank>     
+            </div> 
+        <div class="output-grid"> 
+            <blank data-version1></blank>             
+            <blank data-version1>Selected</blank>
             <section output-heading>Selection</section>
             <output output-book>Genesis</output>
             <output output-version>ESV</output>
             <output output-number></output>
-            <output output-selection></output>
-            <blank data-version1></blank>
             <blank data-version1></blank>
             <blank data-version1>select resource</blank>                                               
             <section select-heading>Resources</section>
@@ -282,11 +278,14 @@ A new tab will be opened to display the selected resource. Return to this page f
             <button select-option>Constable</button>
             <button select-option>Bible Project</button>            
             <blank data-version1></blank>
-            <button select-option>BlueLetterBible.Org</button>
-            <button select-option>Bible.Org</button>              
+            <button select-option>BlueLetterBible</button>
+            <button select-option>Bible.Org</button> 
+            <blank data-version1></blank>
+            <blank data-version1></blank>
         </div>                             
     </div>
-</div>
+
+</body>
 <!-- Always at the end of the page -->
 <footer>
 <br />08/23/2020 Rev B. Webpage developed by George Chu. Please send any comment and suggestion to Ampelos79@gmail.com
