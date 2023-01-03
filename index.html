@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,286 +8,775 @@
     <title>Scrollable</title>
     <link href="styles.css" rel="stylesheet">
     <script type="application/json" id="stuff">
-    [{"Book":"Genesis", "Chapter":50, "Swindoll":"The-Pentateuch/Genesis", "Stedman":"Genesis-The-Method-of-Faith", "Constable":"ot/genesis/genesis.htm"}, 
-     {"Book":"Exodus", "Chapter":40, "Swindoll":"The-Pentateuch/Exodus", "Stedman":"Exodus-Design-for-Deliverance", "Constable":"ot/exodus/exodus.htm"},
-     {"Book":"Leviticus", "Chapter":27, "Swindoll":"The-Pentateuch/Leviticus", "Stedman":"Leviticus-The-Way-to-Wholeness", "Constable":"ot/leviticus/leviticus.htm"},
-     {"Book":"Numbers", "Chapter":36, "Swindoll":"The-Pentateuch/Numbers", "Stedman":"Numbers-The-Incomplete-Christian-Life", "Constable":"ot/numbers/numbers.htm"},
-     {"Book":"Deuteronomy", "Chapter":34, "Swindoll":"The-Pentateuch/Deuteronomy", "Stedman":"Deuteronomy-The-Law-That-Delivers", "Constable":"ot/deuteronomy/deuteronomy.htm"},
-     {"Book":"Joshua", "Chapter":24, "Swindoll":"The-Historical-Books/Joshua", "Stedman":"Joshua-Guidebook-to-Victory", "Constable":"ot/joshua/joshua.htm"},
-     {"Book":"Judges", "Chapter":21, "Swindoll":"The-Historical-Books/Judges", "Stedman":"Judges-The-Pattern-of-Defeat", "Constable":"ot/judges/judges.htm"},
-     {"Book":"Ruth", "Chapter":4, "Swindoll":"The-Historical-Books/Ruth", "Stedman":"Ruth-The-Romance-of-Redemption", "Constable":"ot/ruth/ruth.htm"},
-     {"Book":"1 Samuel", "Chapter":31, "Swindoll":"The-Historical-Books/first-Samuel", "Stedman":"1-Samuel-The-Death-of-the-Flesh", "Constable":"ot/1samuel/1samuel.htm"},
-     {"Book":"2 Samuel", "Chapter":24, "Swindoll":"The-Historical-Books/second-Samuel", "Stedman":"2-Samuel-The-Story-of-David", "Constable":"ot/2samuel/2samuel.htm"},
-     {"Book":"1 Kings", "Chapter":22, "Swindoll":"The-Historical-Books/first-Kings", "Stedman":"1-Kings-How-to-Lose-a-Kingdom", "Constable":"ot/1kings/1kings.htm"},
-     {"Book":"2 Kings", "Chapter":25, "Swindoll":"The-Historical-Books/second-Kings", "Stedman":"2-Kings-A-Wasted-Life", "Constable":"ot/2kings/2kings.htm"},
-     {"Book":"1 Chronicles", "Chapter":29, "Swindoll":"The-Historical-Books/first-Chronicles", "Stedman":"1-Chronicles-David-and-the-Ark-of-God", "Constable":"ot/1chronicles/1chronicles.htm"},
-     {"Book":"2 Chronicles", "Chapter":36, "Swindoll":"The-Historical-Books/second-Chronicles", "Stedman":"2-Chronicles-Gods-King-in-Gods-House", "Constable":"ot/2chronicles/2chronicles.htm"},
-     {"Book":"Ezra", "Chapter":10, "Swindoll":"The-Historical-Books/Ezra", "Stedman":"Ezra-The-Way-Back", "Constable":"ot/ezra/ezra.htm"},
-     {"Book":"Nehemiah", "Chapter":13, "Swindoll":"The-Historical-Books/Nehemiah", "Stedman":"Nehemiah-Rebuilding-the-Walls", "Constable":"ot/nehemiah/nehemiah.htm"},
-     {"Book":"Esther", "Chapter":10, "Swindoll":"The-Historical-Books/Esther", "Stedman":"Esther-A-Queen-Under-Control", "Constable":"ot/esther/esther.htm"},
-     {"Book":"Job", "Chapter":42, "Swindoll":"The-Wisdom-Books/Job", "Stedman":"Job-The-Hardest-Lesson", "Constable":"ot/job/job.htm"},
-     {"Book":"Psalms", "Chapter":150, "Swindoll":"The-Wisdom-Books/Psalms", "Stedman":"Psalms-The-Worship-of-an-Honest-Heart", "Constable":"ot/psalms/psalms.htm"},
-     {"Book":"Proverbs", "Chapter":31, "Swindoll":"The-Wisdom-Books/Proverbs", "Stedman":"Proverbs-That-Men-May-Know-Wisdom", "Constable":"ot/proverbs/proverbs.htm"},
-     {"Book":"Ecclesiastes", "Chapter":12, "Swindoll":"The-Wisdom-Books/Ecclesiastes", "Stedman":"Ecclesiastes-The-Inspired-Book-of-Error", "Constable":"ot/ecclesiastes/ecclesiastes.htm"},
-     {"Book":"Song of Solomon", "Chapter":8, "Swindoll":"The-Wisdom-Books/Song-of-Solomon", "Stedman":"Song-of-Solomon-A-Love-Song-and-a-Hymn", "Constable":"ot/song/song.htm"},
-     {"Book":"Isaiah", "Chapter":66, "Swindoll":"The-Major-Prophets/Isaiah", "Stedman":"Isaiah-The-Salvation-of-the-Lord", "Constable":"ot/isaiah/isaiah.htm"},
-     {"Book":"Jeremiah", "Chapter":52, "Swindoll":"The-Major-Prophets/Jeremiah", "Stedman":"Jeremiah-A-Profile-of-Courage", "Constable":"ot/jeremiah/jeremiah.htm"},
-     {"Book":"Lamentations", "Chapter":5, "Swindoll":"The-Major-Prophets/Lamentations", "Stedman":"Lamentations-The-Therapy-of-Trouble", "Constable":"ot/lamentations/lamentations.htm"},
-     {"Book":"Ezekiel", "Chapter":48, "Swindoll":"The-Major-Prophets/Ezekiel", "Stedman":"Ezekiel-Wheel-Bones-and-Restoration", "Constable":"ot/ezekiel/ezekiel.htm"},
-     {"Book":"Daniel", "Chapter":12, "Swindoll":"The-Major-Prophets/Daniel", "Stedman":"Daniel-On-the-Way-to-the-Future", "Constable":"ot/daniel/daniel.htm"},
-     {"Book":"Hosea", "Chapter":14, "Swindoll":"The-Minor-Prophets/Hosea", "Stedman":"Hosea-The-Prophet-and-the-Prostitute", "Constable":"ot/hosea/hosea.htm"},
-     {"Book":"Joel", "Chapter":3, "Swindoll":"The-Minor-Prophets/Joel", "Stedman":"Joel-The-Revelation-of-Gods-Hand", "Constable":"ot/joel/joel.htm"},
-     {"Book":"Amos", "Chapter":9, "Swindoll":"The-Minor-Prophets/Amos", "Stedman":"Amos-God-Doesnt-Play-Favorites", "Constable":"ot/amos/amos.htm"},
-     {"Book":"Obadiah", "Chapter":1, "Swindoll":"The-Minor-Prophets/Obadiah", "Stedman":"Obadiah-Death-to-Edom", "Constable":"ot/obadiah/obadiah.htm"},
-     {"Book":"Jonah", "Chapter":4, "Swindoll":"The-Minor-Prophets/Jonah", "Stedman":"Jonah-The-Reluctant-Ambassador", "Constable":"ot/jonah/jonah.htm"},
-     {"Book":"Micah", "Chapter":7, "Swindoll":"The-Minor-Prophets/Micah", "Stedman":"Micah-Who-is-Like-God", "Constable":"ot/micah/micah.htm"},
-     {"Book":"Nahum", "Chapter":3, "Swindoll":"The-Minor-Prophets/Nahum", "Stedman":"Nahum-The-Terrible-Wrath-of-God", "Constable":"ot/nahum/nahum.htm"},
-     {"Book":"Habakkuk", "Chapter":3, "Swindoll":"The-Minor-Prophets/Habakkuk", "Stedman":"Habukkuk-History-is-in-Gods-Hands", "Constable":"ot/habakkuk/habakkuk.htm"},
-     {"Book":"Zephaniah", "Chapter":3, "Swindoll":"The-Minor-Prophets/Zephaniah", "Stedman":"Zephaniah-The-Day-of-the-Lords-Wrath", "Constable":"ot/zephaniah/zephaniah.htm"},
-     {"Book":"Haggai", "Chapter":2, "Swindoll":"The-Minor-Prophets/Haggai", "Stedman":"Haggai-Some-Words-to-Discouraged-Carpenters", "Constable":"ot/haggai/haggai.htm"},
-     {"Book":"Zechariah", "Chapter":14, "Swindoll":"The-Minor-Prophets/Zechariah", "Stedman":"Zechariah-You-Return-to-Me-Ill-Return-to-You", "Constable":"ot/zechariah/zechariah.htm"},
-     {"Book":"Malachi", "Chapter":4, "Swindoll":"The-Minor-Prophets/Malachi", "Stedman":"Malachi-Think-upon-His-Name", "Constable":"ot/malachi/malachi.htm"},
-     {"Book":"Matthew", "Chapter":28, "Swindoll":"The-Gospels/Matthew", "Stedman":"Matthew-Behold-Your-King", "Constable":"nt/matthew/matthew.htm"},
-     {"Book":"Mark", "Chapter":16, "Swindoll":"The-Gospels/Mark", "Stedman":"Mark-He-Came-to-Serve", "Constable":"nt/mark/mark.htm"},
-     {"Book":"Luke", "Chapter":24, "Swindoll":"The-Gospels/Luke", "Stedman":"Luke-The-Perfect-Man", "Constable":"nt/luke/luke.htm"},
-     {"Book":"John", "Chapter":21, "Swindoll":"The-Gospels/John", "Stedman":"John-Who-is-This-Man", "Constable":"nt/john/john.htm"},
-     {"Book":"Acts", "Chapter":28, "Swindoll":"The-History-of-the-Early-Church/Acts", "Stedman":"Acts-An-Unfinished-Story", "Constable":"nt/acts/acts.htm"},
-     {"Book":"Romans", "Chapter":16, "Swindoll":"The-Pauline-Epistles/Romans", "Stedman":"Romans-The-Master-Key-to-Scripture", "Constable":"nt/romans/romans.htm"},
-     {"Book":"1 Corinthians", "Chapter":16, "Swindoll":"The-Pauline-Epistles/first-Corinthians", "Stedman":"1-Corinthians-The-Epistle-to-the-21st-Century", "Constable":"nt/1corinthians/1corinthians.htm"},
-     {"Book":"2 Corinthians", "Chapter":13, "Swindoll":"The-Pauline-Epistles/second-Corinthians", "Stedman":"2-Corinthians-When-I-Am-Weak-I-Am-Strong", "Constable":"nt/2corinthians/2corinthians.htm"},
-     {"Book":"Galatians", "Chapter":6, "Swindoll":"The-Pauline-Epistles/Galatians", "Stedman":"Galatians-Dont-Submit-Again-to-the-Slaves-Yoke", "Constable":"nt/galatians/galatians.htm"},
-     {"Book":"Ephesians", "Chapter":6, "Swindoll":"The-Pauline-Epistles/Ephesians", "Stedman":"Ephesians-The-Calling-of-the-Saints", "Constable":"nt/ephesians/ephesians.htm"},
-     {"Book":"Philippians", "Chapter":4, "Swindoll":"The-Pauline-Epistles/Philippians", "Stedman":"Philippians-Christ-Our-Confidence-and-Our-Strength", "Constable":"nt/philippians/philippians.htm"},
-     {"Book":"Colossians", "Chapter":4, "Swindoll":"The-Pauline-Epistles/Colossians", "Stedman":"Colossians-Power-to-Endure-with-Joy", "Constable":"nt/colossians/colossians.htm"},
-     {"Book":"1 Thessalonians", "Chapter":5, "Swindoll":"The-Pauline-Epistles/first-Thessalonians", "Stedman":"1-Thessalonians-Hope-for-a-Hopeless-World", "Constable":"nt/1thessalonians/1thessalonians.htm"},
-     {"Book":"2 Thessalonians", "Chapter":3, "Swindoll":"The-Pauline-Epistles/second-Thessalonians", "Stedman":"2-Thessalonians-Restrainers-of-Lawlessness", "Constable":"nt/2thessalonians/2thessalonians.htm"},
-     {"Book":"1 Timothy", "Chapter":6, "Swindoll":"The-Pauline-Epistles/first-Timothy", "Stedman":"1-Timothy-Pastors-Primer", "Constable":"nt/1timothy/1timothy.htm"},
-     {"Book":"2 Timothy", "Chapter":4, "Swindoll":"The-Pauline-Epistles/second-Timothy", "Stedman":"2-Timothy-How-Not-to-Collapse", "Constable":"nt/2timothy/2timothy.htm"},
-     {"Book":"Titus", "Chapter":3, "Swindoll":"The-Pauline-Epistles/Titus", "Stedman":"Titus-Truth-and-Proof", "Constable":"nt/titus/titus.htm"},
-     {"Book":"Philemon", "Chapter":1, "Swindoll":"The-Pauline-Epistles/Philemon", "Stedman":"Philemon-A-Brother-Restored", "Constable":"nt/philemon/philemon.htm"},
-     {"Book":"Hebrews", "Chapter":13, "Swindoll":"The-General-Epistles/Hebrews", "Stedman":"Hebrews-All-About-Faith", "Constable":"nt/hebrews/hebrews.htm"},
-     {"Book":"James", "Chapter":5, "Swindoll":"The-General-Epistles/James", "Stedman":"James-The-Activity-of-Faith", "Constable":"nt/james/james.htm"},
-     {"Book":"1 Peter", "Chapter":5, "Swindoll":"The-General-Epistles/first-Peter", "Stedman":"1-Peter-Living-Stones", "Constable":"nt/1peter/1peter.htm"},
-     {"Book":"2 Peter", "Chapter":3, "Swindoll":"The-General-Epistles/second-Peter", "Stedman":"2-Peter-In-the-Face-of-Falsehood", "Constable":"nt/2peter/2peter.htm"},
-     {"Book":"1 John", "Chapter":5, "Swindoll":"The-General-Epistles/first-John", "Stedman":"1-John-The-Fruit-of-Fellowship-with-Christ", "Constable":"nt/1john/1john.htm"},
-     {"Book":"2 John", "Chapter":1, "Swindoll":"The-General-Epistles/second-John", "Stedman":"2-John-The-Vital-Balance", "Constable":"nt/2john/2john.htm"},
-     {"Book":"3 John", "Chapter":1, "Swindoll":"The-General-Epistles/third-John", "Stedman":"3-John-A-Tale-of-Three-Men", "Constable":"nt/3john/3john.htm"},
-     {"Book":"Jude", "Chapter":1, "Swindoll":"The-General-Epistles/Jude", "Stedman":"Jude-Contending-for-the-Faith", "Constable":"nt/jude/jude.htm"},
-     {"Book":"Revelation", "Chapter":22, "Swindoll":"The-Apocalypse/Revelation", "Stedman":"Revelation-The-End--and-a-New-Beginning"}]
+        [{
+                "Book": "Genesis",
+                "Chapter": 50,
+                "Swindoll": "The-Pentateuch/Genesis",
+                "Stedman": "Genesis-The-Method-of-Faith",
+                "Constable": "ot/genesis/genesis.htm"
+            },
+            {
+                "Book": "Exodus",
+                "Chapter": 40,
+                "Swindoll": "The-Pentateuch/Exodus",
+                "Stedman": "Exodus-Design-for-Deliverance",
+                "Constable": "ot/exodus/exodus.htm"
+            },
+            {
+                "Book": "Leviticus",
+                "Chapter": 27,
+                "Swindoll": "The-Pentateuch/Leviticus",
+                "Stedman": "Leviticus-The-Way-to-Wholeness",
+                "Constable": "ot/leviticus/leviticus.htm"
+            },
+            {
+                "Book": "Numbers",
+                "Chapter": 36,
+                "Swindoll": "The-Pentateuch/Numbers",
+                "Stedman": "Numbers-The-Incomplete-Christian-Life",
+                "Constable": "ot/numbers/numbers.htm"
+            },
+            {
+                "Book": "Deuteronomy",
+                "Chapter": 34,
+                "Swindoll": "The-Pentateuch/Deuteronomy",
+                "Stedman": "Deuteronomy-The-Law-That-Delivers",
+                "Constable": "ot/deuteronomy/deuteronomy.htm"
+            },
+            {
+                "Book": "Joshua",
+                "Chapter": 24,
+                "Swindoll": "The-Historical-Books/Joshua",
+                "Stedman": "Joshua-Guidebook-to-Victory",
+                "Constable": "ot/joshua/joshua.htm"
+            },
+            {
+                "Book": "Judges",
+                "Chapter": 21,
+                "Swindoll": "The-Historical-Books/Judges",
+                "Stedman": "Judges-The-Pattern-of-Defeat",
+                "Constable": "ot/judges/judges.htm"
+            },
+            {
+                "Book": "Ruth",
+                "Chapter": 4,
+                "Swindoll": "The-Historical-Books/Ruth",
+                "Stedman": "Ruth-The-Romance-of-Redemption",
+                "Constable": "ot/ruth/ruth.htm"
+            },
+            {
+                "Book": "1 Samuel",
+                "Chapter": 31,
+                "Swindoll": "The-Historical-Books/first-Samuel",
+                "Stedman": "1-Samuel-The-Death-of-the-Flesh",
+                "Constable": "ot/1samuel/1samuel.htm"
+            },
+            {
+                "Book": "2 Samuel",
+                "Chapter": 24,
+                "Swindoll": "The-Historical-Books/second-Samuel",
+                "Stedman": "2-Samuel-The-Story-of-David",
+                "Constable": "ot/2samuel/2samuel.htm"
+            },
+            {
+                "Book": "1 Kings",
+                "Chapter": 22,
+                "Swindoll": "The-Historical-Books/first-Kings",
+                "Stedman": "1-Kings-How-to-Lose-a-Kingdom",
+                "Constable": "ot/1kings/1kings.htm"
+            },
+            {
+                "Book": "2 Kings",
+                "Chapter": 25,
+                "Swindoll": "The-Historical-Books/second-Kings",
+                "Stedman": "2-Kings-A-Wasted-Life",
+                "Constable": "ot/2kings/2kings.htm"
+            },
+            {
+                "Book": "1 Chronicles",
+                "Chapter": 29,
+                "Swindoll": "The-Historical-Books/first-Chronicles",
+                "Stedman": "1-Chronicles-David-and-the-Ark-of-God",
+                "Constable": "ot/1chronicles/1chronicles.htm"
+            },
+            {
+                "Book": "2 Chronicles",
+                "Chapter": 36,
+                "Swindoll": "The-Historical-Books/second-Chronicles",
+                "Stedman": "2-Chronicles-Gods-King-in-Gods-House",
+                "Constable": "ot/2chronicles/2chronicles.htm"
+            },
+            {
+                "Book": "Ezra",
+                "Chapter": 10,
+                "Swindoll": "The-Historical-Books/Ezra",
+                "Stedman": "Ezra-The-Way-Back",
+                "Constable": "ot/ezra/ezra.htm"
+            },
+            {
+                "Book": "Nehemiah",
+                "Chapter": 13,
+                "Swindoll": "The-Historical-Books/Nehemiah",
+                "Stedman": "Nehemiah-Rebuilding-the-Walls",
+                "Constable": "ot/nehemiah/nehemiah.htm"
+            },
+            {
+                "Book": "Esther",
+                "Chapter": 10,
+                "Swindoll": "The-Historical-Books/Esther",
+                "Stedman": "Esther-A-Queen-Under-Control",
+                "Constable": "ot/esther/esther.htm"
+            },
+            {
+                "Book": "Job",
+                "Chapter": 42,
+                "Swindoll": "The-Wisdom-Books/Job",
+                "Stedman": "Job-The-Hardest-Lesson",
+                "Constable": "ot/job/job.htm"
+            },
+            {
+                "Book": "Psalms",
+                "Chapter": 150,
+                "Swindoll": "The-Wisdom-Books/Psalms",
+                "Stedman": "Psalms-The-Worship-of-an-Honest-Heart",
+                "Constable": "ot/psalms/psalms.htm"
+            },
+            {
+                "Book": "Proverbs",
+                "Chapter": 31,
+                "Swindoll": "The-Wisdom-Books/Proverbs",
+                "Stedman": "Proverbs-That-Men-May-Know-Wisdom",
+                "Constable": "ot/proverbs/proverbs.htm"
+            },
+            {
+                "Book": "Ecclesiastes",
+                "Chapter": 12,
+                "Swindoll": "The-Wisdom-Books/Ecclesiastes",
+                "Stedman": "Ecclesiastes-The-Inspired-Book-of-Error",
+                "Constable": "ot/ecclesiastes/ecclesiastes.htm"
+            },
+            {
+                "Book": "Song of Solomon",
+                "Chapter": 8,
+                "Swindoll": "The-Wisdom-Books/Song-of-Solomon",
+                "Stedman": "Song-of-Solomon-A-Love-Song-and-a-Hymn",
+                "Constable": "ot/song/song.htm"
+            },
+            {
+                "Book": "Isaiah",
+                "Chapter": 66,
+                "Swindoll": "The-Major-Prophets/Isaiah",
+                "Stedman": "Isaiah-The-Salvation-of-the-Lord",
+                "Constable": "ot/isaiah/isaiah.htm"
+            },
+            {
+                "Book": "Jeremiah",
+                "Chapter": 52,
+                "Swindoll": "The-Major-Prophets/Jeremiah",
+                "Stedman": "Jeremiah-A-Profile-of-Courage",
+                "Constable": "ot/jeremiah/jeremiah.htm"
+            },
+            {
+                "Book": "Lamentations",
+                "Chapter": 5,
+                "Swindoll": "The-Major-Prophets/Lamentations",
+                "Stedman": "Lamentations-The-Therapy-of-Trouble",
+                "Constable": "ot/lamentations/lamentations.htm"
+            },
+            {
+                "Book": "Ezekiel",
+                "Chapter": 48,
+                "Swindoll": "The-Major-Prophets/Ezekiel",
+                "Stedman": "Ezekiel-Wheel-Bones-and-Restoration",
+                "Constable": "ot/ezekiel/ezekiel.htm"
+            },
+            {
+                "Book": "Daniel",
+                "Chapter": 12,
+                "Swindoll": "The-Major-Prophets/Daniel",
+                "Stedman": "Daniel-On-the-Way-to-the-Future",
+                "Constable": "ot/daniel/daniel.htm"
+            },
+            {
+                "Book": "Hosea",
+                "Chapter": 14,
+                "Swindoll": "The-Minor-Prophets/Hosea",
+                "Stedman": "Hosea-The-Prophet-and-the-Prostitute",
+                "Constable": "ot/hosea/hosea.htm"
+            },
+            {
+                "Book": "Joel",
+                "Chapter": 3,
+                "Swindoll": "The-Minor-Prophets/Joel",
+                "Stedman": "Joel-The-Revelation-of-Gods-Hand",
+                "Constable": "ot/joel/joel.htm"
+            },
+            {
+                "Book": "Amos",
+                "Chapter": 9,
+                "Swindoll": "The-Minor-Prophets/Amos",
+                "Stedman": "Amos-God-Doesnt-Play-Favorites",
+                "Constable": "ot/amos/amos.htm"
+            },
+            {
+                "Book": "Obadiah",
+                "Chapter": 1,
+                "Swindoll": "The-Minor-Prophets/Obadiah",
+                "Stedman": "Obadiah-Death-to-Edom",
+                "Constable": "ot/obadiah/obadiah.htm"
+            },
+            {
+                "Book": "Jonah",
+                "Chapter": 4,
+                "Swindoll": "The-Minor-Prophets/Jonah",
+                "Stedman": "Jonah-The-Reluctant-Ambassador",
+                "Constable": "ot/jonah/jonah.htm"
+            },
+            {
+                "Book": "Micah",
+                "Chapter": 7,
+                "Swindoll": "The-Minor-Prophets/Micah",
+                "Stedman": "Micah-Who-is-Like-God",
+                "Constable": "ot/micah/micah.htm"
+            },
+            {
+                "Book": "Nahum",
+                "Chapter": 3,
+                "Swindoll": "The-Minor-Prophets/Nahum",
+                "Stedman": "Nahum-The-Terrible-Wrath-of-God",
+                "Constable": "ot/nahum/nahum.htm"
+            },
+            {
+                "Book": "Habakkuk",
+                "Chapter": 3,
+                "Swindoll": "The-Minor-Prophets/Habakkuk",
+                "Stedman": "Habukkuk-History-is-in-Gods-Hands",
+                "Constable": "ot/habakkuk/habakkuk.htm"
+            },
+            {
+                "Book": "Zephaniah",
+                "Chapter": 3,
+                "Swindoll": "The-Minor-Prophets/Zephaniah",
+                "Stedman": "Zephaniah-The-Day-of-the-Lords-Wrath",
+                "Constable": "ot/zephaniah/zephaniah.htm"
+            },
+            {
+                "Book": "Haggai",
+                "Chapter": 2,
+                "Swindoll": "The-Minor-Prophets/Haggai",
+                "Stedman": "Haggai-Some-Words-to-Discouraged-Carpenters",
+                "Constable": "ot/haggai/haggai.htm"
+            },
+            {
+                "Book": "Zechariah",
+                "Chapter": 14,
+                "Swindoll": "The-Minor-Prophets/Zechariah",
+                "Stedman": "Zechariah-You-Return-to-Me-Ill-Return-to-You",
+                "Constable": "ot/zechariah/zechariah.htm"
+            },
+            {
+                "Book": "Malachi",
+                "Chapter": 4,
+                "Swindoll": "The-Minor-Prophets/Malachi",
+                "Stedman": "Malachi-Think-upon-His-Name",
+                "Constable": "ot/malachi/malachi.htm"
+            },
+            {
+                "Book": "Matthew",
+                "Chapter": 28,
+                "Swindoll": "The-Gospels/Matthew",
+                "Stedman": "Matthew-Behold-Your-King",
+                "Constable": "nt/matthew/matthew.htm"
+            },
+            {
+                "Book": "Mark",
+                "Chapter": 16,
+                "Swindoll": "The-Gospels/Mark",
+                "Stedman": "Mark-He-Came-to-Serve",
+                "Constable": "nt/mark/mark.htm"
+            },
+            {
+                "Book": "Luke",
+                "Chapter": 24,
+                "Swindoll": "The-Gospels/Luke",
+                "Stedman": "Luke-The-Perfect-Man",
+                "Constable": "nt/luke/luke.htm"
+            },
+            {
+                "Book": "John",
+                "Chapter": 21,
+                "Swindoll": "The-Gospels/John",
+                "Stedman": "John-Who-is-This-Man",
+                "Constable": "nt/john/john.htm"
+            },
+            {
+                "Book": "Acts",
+                "Chapter": 28,
+                "Swindoll": "The-History-of-the-Early-Church/Acts",
+                "Stedman": "Acts-An-Unfinished-Story",
+                "Constable": "nt/acts/acts.htm"
+            },
+            {
+                "Book": "Romans",
+                "Chapter": 16,
+                "Swindoll": "The-Pauline-Epistles/Romans",
+                "Stedman": "Romans-The-Master-Key-to-Scripture",
+                "Constable": "nt/romans/romans.htm"
+            },
+            {
+                "Book": "1 Corinthians",
+                "Chapter": 16,
+                "Swindoll": "The-Pauline-Epistles/first-Corinthians",
+                "Stedman": "1-Corinthians-The-Epistle-to-the-21st-Century",
+                "Constable": "nt/1corinthians/1corinthians.htm"
+            },
+            {
+                "Book": "2 Corinthians",
+                "Chapter": 13,
+                "Swindoll": "The-Pauline-Epistles/second-Corinthians",
+                "Stedman": "2-Corinthians-When-I-Am-Weak-I-Am-Strong",
+                "Constable": "nt/2corinthians/2corinthians.htm"
+            },
+            {
+                "Book": "Galatians",
+                "Chapter": 6,
+                "Swindoll": "The-Pauline-Epistles/Galatians",
+                "Stedman": "Galatians-Dont-Submit-Again-to-the-Slaves-Yoke",
+                "Constable": "nt/galatians/galatians.htm"
+            },
+            {
+                "Book": "Ephesians",
+                "Chapter": 6,
+                "Swindoll": "The-Pauline-Epistles/Ephesians",
+                "Stedman": "Ephesians-The-Calling-of-the-Saints",
+                "Constable": "nt/ephesians/ephesians.htm"
+            },
+            {
+                "Book": "Philippians",
+                "Chapter": 4,
+                "Swindoll": "The-Pauline-Epistles/Philippians",
+                "Stedman": "Philippians-Christ-Our-Confidence-and-Our-Strength",
+                "Constable": "nt/philippians/philippians.htm"
+            },
+            {
+                "Book": "Colossians",
+                "Chapter": 4,
+                "Swindoll": "The-Pauline-Epistles/Colossians",
+                "Stedman": "Colossians-Power-to-Endure-with-Joy",
+                "Constable": "nt/colossians/colossians.htm"
+            },
+            {
+                "Book": "1 Thessalonians",
+                "Chapter": 5,
+                "Swindoll": "The-Pauline-Epistles/first-Thessalonians",
+                "Stedman": "1-Thessalonians-Hope-for-a-Hopeless-World",
+                "Constable": "nt/1thessalonians/1thessalonians.htm"
+            },
+            {
+                "Book": "2 Thessalonians",
+                "Chapter": 3,
+                "Swindoll": "The-Pauline-Epistles/second-Thessalonians",
+                "Stedman": "2-Thessalonians-Restrainers-of-Lawlessness",
+                "Constable": "nt/2thessalonians/2thessalonians.htm"
+            },
+            {
+                "Book": "1 Timothy",
+                "Chapter": 6,
+                "Swindoll": "The-Pauline-Epistles/first-Timothy",
+                "Stedman": "1-Timothy-Pastors-Primer",
+                "Constable": "nt/1timothy/1timothy.htm"
+            },
+            {
+                "Book": "2 Timothy",
+                "Chapter": 4,
+                "Swindoll": "The-Pauline-Epistles/second-Timothy",
+                "Stedman": "2-Timothy-How-Not-to-Collapse",
+                "Constable": "nt/2timothy/2timothy.htm"
+            },
+            {
+                "Book": "Titus",
+                "Chapter": 3,
+                "Swindoll": "The-Pauline-Epistles/Titus",
+                "Stedman": "Titus-Truth-and-Proof",
+                "Constable": "nt/titus/titus.htm"
+            },
+            {
+                "Book": "Philemon",
+                "Chapter": 1,
+                "Swindoll": "The-Pauline-Epistles/Philemon",
+                "Stedman": "Philemon-A-Brother-Restored",
+                "Constable": "nt/philemon/philemon.htm"
+            },
+            {
+                "Book": "Hebrews",
+                "Chapter": 13,
+                "Swindoll": "The-General-Epistles/Hebrews",
+                "Stedman": "Hebrews-All-About-Faith",
+                "Constable": "nt/hebrews/hebrews.htm"
+            },
+            {
+                "Book": "James",
+                "Chapter": 5,
+                "Swindoll": "The-General-Epistles/James",
+                "Stedman": "James-The-Activity-of-Faith",
+                "Constable": "nt/james/james.htm"
+            },
+            {
+                "Book": "1 Peter",
+                "Chapter": 5,
+                "Swindoll": "The-General-Epistles/first-Peter",
+                "Stedman": "1-Peter-Living-Stones",
+                "Constable": "nt/1peter/1peter.htm"
+            },
+            {
+                "Book": "2 Peter",
+                "Chapter": 3,
+                "Swindoll": "The-General-Epistles/second-Peter",
+                "Stedman": "2-Peter-In-the-Face-of-Falsehood",
+                "Constable": "nt/2peter/2peter.htm"
+            },
+            {
+                "Book": "1 John",
+                "Chapter": 5,
+                "Swindoll": "The-General-Epistles/first-John",
+                "Stedman": "1-John-The-Fruit-of-Fellowship-with-Christ",
+                "Constable": "nt/1john/1john.htm"
+            },
+            {
+                "Book": "2 John",
+                "Chapter": 1,
+                "Swindoll": "The-General-Epistles/second-John",
+                "Stedman": "2-John-The-Vital-Balance",
+                "Constable": "nt/2john/2john.htm"
+            },
+            {
+                "Book": "3 John",
+                "Chapter": 1,
+                "Swindoll": "The-General-Epistles/third-John",
+                "Stedman": "3-John-A-Tale-of-Three-Men",
+                "Constable": "nt/3john/3john.htm"
+            },
+            {
+                "Book": "Jude",
+                "Chapter": 1,
+                "Swindoll": "The-General-Epistles/Jude",
+                "Stedman": "Jude-Contending-for-the-Faith",
+                "Constable": "nt/jude/jude.htm"
+            },
+            {
+                "Book": "Revelation",
+                "Chapter": 22,
+                "Swindoll": "The-Apocalypse/Revelation",
+                "Stedman": "Revelation-The-End--and-a-New-Beginning",
+                "Constable": "nt/revelation/revelation.htm"
+            }
+        ]
+
     </script>
-    <script src="script.js" defer></script>    
-<!-- Always on top: Position Fixed-->
-<header>
-    <h1>Bible Study Resources</h1>
-    <h2>A webpage where you can quickly access online resources to help with your bible study. <br />
-Click to select a Book, a Translation and a Chapter, then click to select a Resource. <br />
-A new tab will be opened to display the selected resource. Return to this page for another selection</h2>
-</header>
-<!-- Fixed size after header-->
+    <script src="script.js" defer></script>
+    <!-- Always on top: Position Fixed-->
+    <header>
+        <h1>Bible Study Resources</h1>
+        <p>Select a Book, Translation and a Chapter, then select a Resource. <br />
+            Translations are listed from Formal (word-for-word) to Dynamic (thought-for-thought)<br />
+            A new tab will be opened to display the selected resource. Return to this page for another selection</p>
+    </header>
+    <!-- Fixed size after header-->
+
 <body style="margin:-; padding:0; height:100%;">
-<div class="content">
-    <div class="sidebar1">
-    </div>
-    <!-- Scrollable div with main content -->
-    <div id="scrollable2">
-        <div class="grid-container">
-            <div class="bible-grid"> 
-                <blank data-book1></blank>
-                <blank data-book1></blank>
-                <blank data-book1></blank>                                
-                <blank data-book1>select one</blank>
-                <blank data-book1></blank>
-                <blank data-book1></blank>        
-                <section data-heading>Pentateuch (Law)</section>
-                <section data-heading>Wisdom Books</section>
-                <section data-heading>Major Prophets</section>
-                <button data-book>Genesis</button>
-                <button data-book>Job</button>
-                <button data-book>Isaiah</button>
-                <button data-book>Exodus</button>
-                <button data-book>Psalms</button>
-                <button data-book>Jeremiah</button>
-                <button data-book>Leviticus</button>
-                <button data-book>Proverbs</button>
-                <button data-book>Lamentations</button>
-                <button data-book>Numbers</button>
-                <button data-book>Ecclesiastes</button>
-                <button data-book>Ezekiel</button>
-                <button data-book>Deuteronomy</button>
-                <button data-book>Song of Solomon</button>
-                <button data-book>Daniel</button>
-                <blank data-book1></blank>
-                <blank data-book1></blank>
-                <blank data-book1></blank>
-                <section data-heading>Historical Books</section>
-                <blank data-book1></blank>
-                <section data-heading>Minor Prophets</section>                        
-                <button data-book>Joshua</button>
-                <blank data-book1></blank>
-                <button data-book>Hosea</button>
-                <button data-book>Judges</button>
-                <blank data-book1></blank>
-                <button data-book>Joel</button>
-                <button data-book>Ruth</button>
-                <blank data-book1></blank>
-                <button data-book>Amos</button>
-                <button data-book>1 Samuel</button>
-                <blank data-book1></blank>
-                <button data-book>Obadiah</button>
-                <button data-book>2 Samuel</button>
-                <blank data-book1></blank>
-                <button data-book>Jonah</button>
-                <button data-book>1 Kings</button>
-                <blank data-book1></blank>
-                <button data-book>Micah</button>
-                <button data-book>2 Kings</button>
-                <blank data-book1></blank>
-                <button data-book>Nahum</button>
-                <button data-book>1 Chronicles</button>
-                <blank data-book1></blank>
-                <button data-book>Habakkuk</button>
-                <button data-book>2 Chronicles</button>
-                <blank data-book1></blank>
-                <button data-book>Zephaniah</button>
-                <button data-book>Ezra</button>
-                <blank data-book1></blank>
-                <button data-book>Haggai</button>
-                <button data-book>Nehemiah</button>
-                <blank data-book1></blank>
-                <button data-book>Zechariah</button>
-                <button data-book>Esther</button>
-                <blank data-book1></blank>
-                <button data-book>Malachi</button>
-                <blank data-book1></blank>
-                <blank data-book1></blank>
-                <blank data-book1></blank>                        
-                <section data-heading>Gospels</section>
-                <section data-heading>Pauline Epistles</section>
-                <section data-heading>General Epistles</section>
-                <button data-book>Matthew</button>
-                <button data-book>Romans</button>
-                <button data-book>Hebrews</button>
-                <button data-book>Mark</button>
-                <button data-book>1 Corinthians</button>
-                <button data-book>James</button>
-                <button data-book>Luke</button>
-                <button data-book>2 Corinthians</button>
-                <button data-book>1 Peter</button>
-                <button data-book>John</button>
-                <button data-book>Galatians</button>
-                <button data-book>2 Peter</button>
-                <blank data-book1></blank>            
-                <button data-book>Ephesians</button>
-                <button data-book>1 John</button>
-                <section data-heading>Early Churches</section>
-                <button data-book>Philippians</button>
-                <button data-book>2 John</button>
-                <button data-book>Acts</button>            
-                <button data-book>Colossians</button>
-                <button data-book>3 John</button>
-                <blank data-book1></blank>
-                <button data-book>1 Thessalonians</button>
-                <button data-book>Jude</button>
-                <blank data-book1></blank>
-                <button data-book>2 Thessalonians</button>
-                <blank data-book1></blank>
-                <blank data-book1></blank>
-                <button data-book>1 Timothy</button>
-                <section data-heading>Apocalypse</section>
-                <blank data-book1></blank>
-                <button data-book>2 Timothy</button>
-                <button data-book>Revelation</button>
-                <blank data-book1></blank>
-                <button data-book>Titus</button>
-                <blank data-book1></blank>
-                <blank data-book1></blank>
-                <button data-book>Philemon</button>
-                <blank data-book1></blank>
-                <blank data-book1></blank>
-                <blank data-book1></blank>
-                <blank data-book1></blank>                
+    <div class="content">
+        <div class="sidebar1">
+        </div>
+        <!-- Scrollable div with main content -->
+        <div id="scrollable2">
+            <div class="grid-container">
+                <div class="bible-grid">
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <blank data-book1>select one</blank>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <section data-heading>Old Testament</section>
+                    <blank data-book1></blank>
+                    <section data-heading>Pentateuch (Law)</section>
+                    <section data-heading>Wisdom Books</section>
+                    <section data-heading>Major Prophets</section>
+                    <button data-book>Genesis</button>
+                    <button data-book>Job</button>
+                    <button data-book>Isaiah</button>
+                    <button data-book>Exodus</button>
+                    <button data-book>Psalms</button>
+                    <button data-book>Jeremiah</button>
+                    <button data-book>Leviticus</button>
+                    <button data-book>Proverbs</button>
+                    <button data-book>Lamentations</button>
+                    <button data-book>Numbers</button>
+                    <button data-book>Ecclesiastes</button>
+                    <button data-book>Ezekiel</button>
+                    <button data-book>Deuteronomy</button>
+                    <button data-book>Song of Solomon</button>
+                    <button data-book>Daniel</button>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <section data-heading>Historical Books</section>
+                    <blank data-book1></blank>
+                    <section data-heading>Minor Prophets</section>
+                    <button data-book>Joshua</button>
+                    <blank data-book1></blank>
+                    <button data-book>Hosea</button>
+                    <button data-book>Judges</button>
+                    <blank data-book1></blank>
+                    <button data-book>Joel</button>
+                    <button data-book>Ruth</button>
+                    <blank data-book1></blank>
+                    <button data-book>Amos</button>
+                    <button data-book>1 Samuel</button>
+                    <blank data-book1></blank>
+                    <button data-book>Obadiah</button>
+                    <button data-book>2 Samuel</button>
+                    <blank data-book1></blank>
+                    <button data-book>Jonah</button>
+                    <button data-book>1 Kings</button>
+                    <blank data-book1></blank>
+                    <button data-book>Micah</button>
+                    <button data-book>2 Kings</button>
+                    <blank data-book1></blank>
+                    <button data-book>Nahum</button>
+                    <button data-book>1 Chronicles</button>
+                    <blank data-book1></blank>
+                    <button data-book>Habakkuk</button>
+                    <button data-book>2 Chronicles</button>
+                    <blank data-book1></blank>
+                    <button data-book>Zephaniah</button>
+                    <button data-book>Ezra</button>
+                    <blank data-book1></blank>
+                    <button data-book>Haggai</button>
+                    <button data-book>Nehemiah</button>
+                    <blank data-book1></blank>
+                    <button data-book>Zechariah</button>
+                    <button data-book>Esther</button>
+                    <blank data-book1></blank>
+                    <button data-book>Malachi</button>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <section data-heading>New Testament</section>
+                    <blank data-book1></blank>
+                    <section data-heading>Gospels</section>
+                    <section data-heading>Pauline Epistles</section>
+                    <section data-heading>General Epistles</section>
+                    <button data-book>Matthew</button>
+                    <button data-book>Romans</button>
+                    <button data-book>Hebrews</button>
+                    <button data-book>Mark</button>
+                    <button data-book>1 Corinthians</button>
+                    <button data-book>James</button>
+                    <button data-book>Luke</button>
+                    <button data-book>2 Corinthians</button>
+                    <button data-book>1 Peter</button>
+                    <button data-book>John</button>
+                    <button data-book>Galatians</button>
+                    <button data-book>2 Peter</button>
+                    <blank data-book1></blank>
+                    <button data-book>Ephesians</button>
+                    <button data-book>1 John</button>
+                    <section data-heading>Early Churches</section>
+                    <button data-book>Philippians</button>
+                    <button data-book>2 John</button>
+                    <button data-book>Acts</button>
+                    <button data-book>Colossians</button>
+                    <button data-book>3 John</button>
+                    <blank data-book1></blank>
+                    <button data-book>1 Thessalonians</button>
+                    <button data-book>Jude</button>
+                    <blank data-book1></blank>
+                    <button data-book>2 Thessalonians</button>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <button data-book>1 Timothy</button>
+                    <section data-heading>Apocalypse</section>
+                    <blank data-book1></blank>
+                    <button data-book>2 Timothy</button>
+                    <button data-book>Revelation</button>
+                    <blank data-book1></blank>
+                    <button data-book>Titus</button>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <button data-book>Philemon</button>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <section data-heading>HEBREW BIBLE</section>
+                    <blank data-book1></blank>
+                    <section data-heading>Law</section>
+                    <section data-heading>Former Prophets</section>
+                    <section data-heading>Writing</section>
+                    <button data-book>Genesis</button>
+                    <button data-book>Joshua</button>
+                    <button data-book>Psalms</button>
+                    <button data-book>Exodus</button>
+                    <button data-book>Judges</button>
+                    <button data-book>Job</button>
+                    <button data-book>Leviticus</button>
+                    <button data-book>1 Samuel</button>
+                    <button data-book>Proverbs</button>
+                    <button data-book>Numbers</button>
+                    <button data-book>2 Samuel</button>
+                    <button data-book>Ruth</button>
+                    <button data-book>Deuteronomy</button>
+                    <button data-book>1 Kings</button>
+                    <button data-book>Song of Solomon</button>
+                    <blank data-book1></blank>
+                    <button data-book>2 Kings</button>
+                    <button data-book>Ecclesiastes</button>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <button data-book>Lamentations</button>
+                    <blank data-book1></blank>
+                    <section data-heading>Latter Prophets</section>
+                    <button data-book>Esther</button>
+                    <blank data-book1></blank>
+                    <button data-book>Isaiah</button>
+                    <button data-book>Daniel</button>
+                    <blank data-book1></blank>
+                    <button data-book>Jeremiah</button>
+                    <button data-book>Ezra</button>
+                    <blank data-book1></blank>
+                    <button data-book>Ezekiel</button>
+                    <button data-book>Nehemiah</button>
+                    <blank data-book1></blank>
+                    <button data-book>Hosea</button>
+                    <button data-book>1 Chronicles</button>
+                    <blank data-book1></blank>
+                    <button data-book>Joel</button>
+                    <button data-book>2 Chronicles</button>
+                    <blank data-book1></blank>
+                    <button data-book>Amos</button>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <button data-book>Obadiah</button>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <button data-book>Jonah</button>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <button data-book>Micah</button>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <button data-book>Nahum</button>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <button data-book>Habakkuk</button>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <button data-book>Zephaniah</button>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <button data-book>Haggai</button>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <button data-book>Zechariah</button>
+                    <blank data-book1></blank>
+                    <blank data-book1></blank>
+                    <button data-book>Malachi</button>
+                    <blank data-book1></blank>
+                </div>
             </div>
         </div>
     </div>
-</div>    
     <!-- Always on top. Fixed position, fixed width, relative to content width -->
     <div class="sidebar2">
-            <div class="version-grid">  
-                <blank data-version1></blank>                     
-                <blank data-version1>select up to 4</blank>             
-                <section data-heading>Translation</section>
-                <button data-version>ESV</button>
-                <button data-version>NIV</button>
-                <button data-version>NLT</button>
-                <button data-version>MSG</button>
-                <button data-version>AMP</button>
-                <button data-version>CJB</button>
-                <button data-version>NASB</button>
-                <button data-version>NET</button>            
-                <button data-version>NRSV</button>
-                <button data-version>KJV</button>            
-                <button data-version>NKJV</button>                                 
-                <button data-version>MOUNCE</button>
-                <button data-version>NVI</button>
-                <button data-version>CUV</button>
-                <blank data-version1></blank>
-                <button clear-version>CLEAR</button>
-                <blank data-version1></blank>
-                <blank data-version1></blank>
-                <blank data-version1></blank>                                                 
-            </div>
-            <div class="number-grid"> 
-                <blank data-number1></blank>                                 
-                <blank data-number>enter chapter</blank>                  
-                <section data-heading>Chapter</section>
-                <button data-number>1</button>
-                <button data-number>2</button>
-                <button data-number>3</button>
-                <button data-number>4</button>
-                <button data-number>5</button>
-                <button data-number>6</button>
-                <button data-number>7</button>
-                <button data-number>8</button>
-                <button data-number>9</button>
-                <button data-number>0</button>            
-                <blank data-number1></blank>
-                <blank data-number1>number chapters</blank>
-                <section data-max>50</section>
-                <blank data-number1></blank>
-                <blank data-number1></blank>                
-                <button clear-number>CLEAR</button>
-                <blank data-number1></blank>
-                <blank data-number1></blank>
-                <blank data-number1></blank>     
-            </div> 
-        <div class="output-grid"> 
-            <blank data-version1></blank>             
+        <div class="version-grid">
+            <blank data-version1></blank>
+            <blank data-version1>select up to 4</blank>
+            <section data-heading>Translation</section>
+            <button data-version>GRK-HEB</button>
+            <button data-version>NASB</button>
+            <button data-version>ESV</button>
+            <button data-version>KJV</button>
+            <button data-version>NKJV</button>
+            <button data-version>CSB</button>
+            <button data-version>NET</button>
+            <button data-version>NRSV</button>
+            <button data-version>NIV</button>
+            <button data-version>NLT</button>
+            <button data-version>GNT</button>
+            <button data-version>CEB</button>
+            <button data-version>TLB</button>
+            <button data-version>MSG</button>
+            <blank data-version1></blank>
+            <button data-version>AMP</button>
+            <button data-version>CUV</button>
+            <button data-version>CNVT</button>
+            <blank data-version1></blank>
+            <button clear-version>CLEAR</button>
+        </div>
+        <div class="number-grid">
+            <blank data-number1></blank>
+            <blank data-number>enter chapter</blank>
+            <section data-heading>Chapter</section>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-number>0</button>
+            <blank data-number1></blank>
+            <blank data-number1>chapters</blank>
+            <section data-max>50</section>
+            <blank data-number1></blank>
+            <blank data-number1></blank>
+            <button operation-number>+</button>
+            <button operation-number>-</button>
+            <blank data-number1></blank>
+            <blank data-number1></blank>
+            <button clear-number>CLEAR</button>
+            <blank data-number1></blank>
+
+        </div>
+        <div class="output-grid">
+            <blank data-version1></blank>
             <blank data-version1>Selected</blank>
             <section output-heading>Selection</section>
             <output output-book>Genesis</output>
             <output output-version>ESV</output>
             <output output-number></output>
             <blank data-version1></blank>
-            <blank data-version1>select resource</blank>                                               
+            <blank data-version1>select resource</blank>
             <section select-heading>Resources</section>
             <button select-option>BibleHub Parallel</button>
             <button select-option>BibleHub Interlinear</button>
-            <button select-option>BibleGateway</button>
-            <blank data-version1></blank>  
-            <button select-option>Swindoll</button>   
-            <button select-option>Stedman</button>   
-            <button select-option>Constable</button>
+            <button select-option>Bible Gateway</button>
+            <blank data-version1></blank>
             <button select-option>Bible Project</button>            
+            <button select-option>Pawson</button>
+            <button select-option>Swindoll</button>
+            <button select-option>Stedman</button>
+            <button select-option>Constable</button>
             <blank data-version1></blank>
-            <button select-option>BlueLetterBible</button>
-            <button select-option>Bible.Org</button> 
+            <button select-option>Blue Letter Bible</button>
+            <button select-option>Bible.Org</button>
+            <button select-option>Mounce Greek</button>
             <blank data-version1></blank>
+            <button select-option>Truth for Life</button>
+            <button select-option>future</button>
+            <button select-option>future</button>
             <blank data-version1></blank>
-        </div>                             
+        </div>
     </div>
 
 </body>
 <!-- Always at the end of the page -->
 <footer>
-<br />08/23/2020 Rev B. Webpage developed by George Chu. Please send any comment and suggestion to Ampelos79@gmail.com
+    <br />01/03/2023 Rev H3. Webpage developed by George Chu. Please send any comment and suggestion to Ampelos79@gmail.com
 </footer>

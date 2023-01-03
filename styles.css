@@ -15,24 +15,32 @@ header{
     z-index:110;
 }
 h1 {
-    font-size: min(3vh, 20px);   
+    font-size: min(2vh, 16px);   
     font-weight: bold;
     border: 2px solid black;
-    text-align: center
+    text-align: center;
 }
 
 h2 {
+    font-size: min(1.5vh, 12px);  
+    text-align: center;
+    font-size: min(1.5vh, 12px);
+    font-weight: normal;
+}
+
+p {
     font-size: min(2vh, 16px);  
     text-align: center;
-    font-weight: normal
+    font-weight: normal; 
+    background: #00AAFF;
 }
 
 .content {
     background:#00AAFF;
     position:relative;
     height: 94%;
-    width: 55%; /* Sizing - any length */
-    padding:80px 0 20px 0; /* Header height and footer height */
+    width: 57%; /* Sizing - any length */
+    padding: 70px 0 20px 0; /* Header height and footer height */
     margin:0 10px 0 10px; /* Center content */
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
@@ -65,17 +73,17 @@ h2 {
     align-content:flex-start;
     min-height: 25vh;
     grid-template-columns: repeat(1,160px);
-    grid-template-rows: minmax(60px,auto) repeat(22,28px);
+    grid-template-rows: minmax(60px,auto) repeat(40,28px);
 
 }
 
 .output-grid > output {
     cursor: pointer;
     font-size: 1rem;
-    font: 1.25rem Arial, san-serif;
+    font: 1rem Arial, san-serif;
     border: 1px solid black;
     align-content:center;
-    font-weight: bold;
+    font-weight: normal;
     color: #0e0ec7;
     text-align: center;
     outline: none;
@@ -88,6 +96,7 @@ h2 {
     text-align: center;
     font: 1rem Arial, san-serif;    
     font-weight: bold;
+    color: white;
     border: 1px solid black;
     outline: none;
     background-color: rgba(136, 124, 124, 0.75);
@@ -141,8 +150,8 @@ h2 {
     justify-content:flex-start;
     align-content:flex-start;
     min-height: 25vh;
-    grid-template-columns: repeat(3,150px);
-    grid-template-rows: minmax(60px,auto) repeat(40,28px);
+    grid-template-columns: repeat(3,162px);
+    grid-template-rows: minmax(60px,auto) repeat(100,28px);
     margin-left: auto;
     margin-right: 10%;
 }
@@ -150,6 +159,7 @@ h2 {
 .bible-grid > button {
     cursor: pointer;
     font-size: 1rem;
+    text-align: center;
     border: 1px solid black;
     outline: none;
     background-color: rgba(255,255,255,.75);
@@ -176,8 +186,8 @@ h2 {
     justify-content:flex-start;
     align-content:flex-start;
     min-height: 25vh;
-    grid-template-columns: repeat(1,110px);
-    grid-template-rows: minmax(60px,auto) repeat(22,28px);
+    grid-template-columns: repeat(1,105px);
+    grid-template-rows: minmax(60px,auto) repeat(40,28px);
 }
 .number-grid > blank {
     font-size: 1rem;
@@ -199,6 +209,10 @@ h2 {
     outline: none;
     background-color: rgba(136, 124, 124, 0.75);
 }
+.number-grid > button[operation-number] {
+    font-weight: normal;
+    font-size:1.5rem;
+}
 .number-grid > button:hover {
     background-color: rgba(255,255,255,.9);   
 }
@@ -208,8 +222,8 @@ h2 {
     justify-content:flex-end;
     align-content:flex-start;
     min-height: 25vh;
-    grid-template-columns: repeat(1,125px);
-    grid-template-rows: minmax(60px,auto) repeat(22,28px);
+    grid-template-columns: repeat(1,115px);
+    grid-template-rows: minmax(60px,auto) repeat(40,28px);
 
 
 }
@@ -242,8 +256,6 @@ h2 {
     border: 1px solid black;
     outline: none;
     background-color: rgba( 191, 176, 176, 0.75 );
-
-
 }
 
 .version-grid > button:hover {
@@ -257,7 +269,7 @@ h2 {
     margin-left: 0px;
     margin-right: auto;
     overflow:auto;
-    padding-top: 2vh;
+    padding-top: 3vh;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
     -o-box-sizing:border-box;
@@ -275,3 +287,177 @@ footer {
     bottom: 0;
     height: 5%;
 }
+
+@media only screen and (max-width: 667px)  {
+    .content {
+        padding: 40px 0 0px 0; /* Header height and footer height */
+        margin:0 10px 0 0px; /* Center content */     
+    }
+    .sidebar2 {
+        padding: 60px 0 0px 0; /* Header height and footer height */
+        margin:0 10px 0 0px; /* Center content */     
+    }
+    .bible-grid {
+        grid-template-columns: repeat(3,50px);
+        grid-template-rows: minmax(60px,auto) repeat(100,35px);        
+        margin-left: 5%;
+        margin-right: 5%;        
+    } 
+    .bible-grid > button {
+        font-size: 0.4rem;
+    }
+    .bible-grid > section {    
+        font-size: 0.4rem;
+    } 
+    .bible-grid > blank {    
+        font-size: 0.4rem;
+    }     
+    .version-grid {   
+        grid-template-columns: repeat(1,50px);
+        grid-template-rows: minmax(60px,auto) repeat(40,35px);          
+    }
+    .version-grid > button {
+        font-size: 0.4rem;
+    }
+    .version-grid > section {    
+        font-size: 0.4rem;        
+    }
+    .version-grid > blank {    
+        font-size: 0.4rem;
+    }    
+    .number-grid {   
+        grid-template-columns: repeat(1,40px);
+        grid-template-rows: minmax(60px,auto) repeat(40,35px);          
+    }
+    .number-grid > button {
+        font-size: 0.4rem;
+    }
+    .number-grid > section {    
+        font-size: 0.4rem;    
+    }
+    .number-grid > blank {    
+        font-size: 0.4rem;
+    }  
+    .number-grid > button[operation-number] {
+        font-weight: bold;
+        font-size:0.6rem;
+    }    
+    .output-grid {   
+        grid-template-columns: repeat(1,50px);
+        grid-template-rows: minmax(60px,auto) repeat(40,35px);          
+    }
+    .output-grid > button {
+        font-size: 0.4rem;
+    }
+    .output-grid > section {    
+        font-size: 0.4rem;    
+    }
+    .output-grid > output {    
+        font-size: 0.4rem;    
+    } 
+    .output-grid > blank {    
+        font-size: 0.4rem;
+    } 
+    
+    h1 {
+    font-size: min(2vh, 12px);   
+    }
+
+    header {
+        font-size: min(1.2vh, 12px);
+    }
+    footer {
+        font-size: min(1.2vh, 12px);        
+    }
+    p {
+    font-size: min(1.2vh, 12px);
+    }
+    
+}
+@media only screen and (min-width: 667px) and (max-width: 900px) {
+    .content {
+        padding: 40px 0 0px 0; /* Header height and footer height */
+        margin:0 10px 0 0px; /* Center content */     
+    }
+    .sidebar2 {
+        padding: 60px 0 0px 0; /* Header height and footer height */
+        margin:0 10px 0 0px; /* Center content */     
+    }
+    .bible-grid {
+        grid-template-columns: repeat(3,100px);
+        grid-template-rows: minmax(60px,auto) repeat(100,35px);        
+        margin-left: 5%;
+        margin-right: 5%;        
+    } 
+    .bible-grid > button {
+        font-size: 0.7rem;
+    }
+    .bible-grid > section {    
+        font-size: 0.7rem;
+    } 
+    .bible-grid > blank {    
+        font-size: 0.7rem;
+    }     
+    .version-grid {   
+        grid-template-columns: repeat(1,100px);
+        grid-template-rows: minmax(60px,auto) repeat(40,35px);          
+    }
+    .version-grid > button {
+        font-size: 0.7rem;
+    }
+    .version-grid > section {    
+        font-size: 0.7rem;        
+    }
+    .version-grid > blank {    
+        font-size: 0.7rem;
+    }    
+    .number-grid {   
+        grid-template-columns: repeat(1,80px);
+        grid-template-rows: minmax(60px,auto) repeat(40,35px);          
+    }
+    .number-grid > button {
+        font-size: 0.7rem;
+    }
+    .number-grid > section {    
+        font-size: 0.7rem;    
+    }
+    .number-grid > blank {    
+        font-size: 0.7rem;
+    }  
+    .number-grid > button[operation-number] {
+        font-weight: bold;
+        font-size:0.8rem;
+    }    
+    .output-grid {   
+        grid-template-columns: repeat(1,100px);
+        grid-template-rows: minmax(60px,auto) repeat(40,35px);          
+    }
+    .output-grid > button {
+        font-size: 0.7rem;
+    }
+    .output-grid > section {    
+        font-size: 0.7rem;    
+    }
+    .output-grid > output {    
+        font-size: 0.7rem;    
+    } 
+    .output-grid > blank {    
+        font-size: 0.7rem;
+    } 
+    
+    h1 {
+    font-size: min(2vh, 12px);   
+    }
+
+    header {
+        font-size: min(1.2vh, 12px);
+    }
+    footer {
+        font-size: min(1.2vh, 12px);        
+    }
+    p {
+    font-size: min(1.2vh, 12px);
+    }
+    
+}
+    
